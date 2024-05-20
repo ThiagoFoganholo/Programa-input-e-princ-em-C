@@ -21,7 +21,7 @@ void inputString(char **frase, int size){
     int i = 0;
     int ch;
     while ((ch = getchar()) != '\n') {
-        if (i >= size - 1) {  // realloc if needed
+        if (i >= size - 1) {  // realloc se necessario
             size *= 2;
             *frase = realloc(*frase, size * sizeof(char));
 
